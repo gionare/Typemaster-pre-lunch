@@ -1,0 +1,12 @@
+body {
+    box-sizing: border-box;
+}
+.wrapper {
+    border: solid;
+    width: 375px;
+    
+}
+header {
+display:flex;
+justify-content: space-around;
+}
