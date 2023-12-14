@@ -1,53 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;1,600&family=Barlow:ital,wght@0,300;0,500;0,700;0,900;1,500;1,900&family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Poppins:wght@200;400;600&family=Red+Hat+Display:wght@300;500;700;900&display=swap");
+
 body {
-  /* background: #fff; */
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  
-  height: 100vw;
+  font-family: "Barlow", sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+main {
+  font-family: "Barlow", sans-serif;
+  /* border: solid; */
+  max-width: 375px;
+  margin: 0 auto;
   overflow-x: hidden;
 }
 
-main {
+/* header section */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.pre-order-now {
+  width: 150px;
+  height: 50px;
+  border: none;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #E8EFF2; 
+}
+#orange {
+  background: #f16718;
+}
+
+/* <!-- Hero section --> */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  gap: 20px;
+  /* width: 100%; */
+}
+.pre-order h1 {
+  color: #162542;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px; /* 100% */
+}
+.pre-order p {
+  color: #7b8bad;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+.row-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.pre-order-now {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+  text-transform: uppercase;
+}
+.release {
+  color: #7b8bad;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+  text-transform: uppercase;
+}
+
+.hero-img {
+  /* max width of the main  */
+  max-width: 100%;
+  border-radius: 15px;
+  margin-right: -50px;
+}
+
+/* <!-- keyboard-images middle content --> */
+.keyboard-images {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 20px;
 }
-
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 64px;
-  }
-
-.displayFlex {
+.images {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  height: 226px;
+  gap: 10px;
+  /* width: 100%; */
+  margin-right: 50px;
 }
-.pre-order {
-  border: solid;
+/* search css before after  pseudo elements, classes */
+.images img:first-child {
+  /* opacity: 0.5; */
+  width: 144px;
+  border-radius: 15px;
+  position: relative;
 }
-.hero-img {
-  border-radius: 20px; 
-  /* width: 300px;  */
-  height: auto;
-  max-width: 80%; 
-  object-fit: cover;
+.images img:last-child {
+  width: 220px;
+  border-radius: 15px;
 }
-
-.feature {
-  display: grid;
+#middle-content {
   text-align: center;
-  gap: 5px;
-  border: solid;
+}
+.pre-order h2 {
+  color: #162542;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px; /* 112.5% */
+  text-transform: uppercase;
+}
+.pre-order p {
+  color: #7b8bad;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
 }
 
-.svg-icon {
-  background-color: #F16718;
-  width:65px ;
-  height: 65px; 
-  
+/* <!-- Feature section --> */
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  color: #162542;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px; /* 116.667% */
+}
+.feature p {
+  color: #7b8bad;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
 }
 
+div.box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* <!-- footer section --> */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 10px;
+  color: #7B8BAD;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 26px; /* 162.5% */ 
+
+}
+
+/* content for Readme */
+/* using child elemens in CSS */
+/* .images img:first-child {
+  opacity: 0.5;
+  width: 144px;
+  border-radius: 15px;
+}
+.images img:last-child {
+  width: 220px;
+  border-radius: 15px;
+} */
+
+/* created script.js to make h1 element in uppercase 
+document.addEventListener("DOMContentLoaded", function () {
+
+  const h1Element = document.querySelector('h1');
+
+  if (h1Element) {
+    h1Element.textContent = h1Element.textContent.toUpperCase();
+  }
+}); */
