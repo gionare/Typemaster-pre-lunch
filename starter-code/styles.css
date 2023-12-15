@@ -13,26 +13,30 @@ main {
   overflow-x: hidden;
 }
 
-/* header section */
+/* *************** -- header section -- ***************  */
 header {
+  /* border: solid; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px;
+  width: 327px; 
+  margin: auto;  /* to be in the center */
 }
+
 .pre-order-now {
   width: 150px;
   height: 50px;
   border: none;
   flex-shrink: 0;
   border-radius: 8px;
-  background: #E8EFF2; 
+  background: #e8eff2;
 }
 #orange {
   background: #f16718;
 }
 
-/* <!-- Hero section --> */
+/* <!-- *************** -- Hero section -- *************** --> */
 .hero {
   display: flex;
   flex-direction: column;
@@ -49,6 +53,7 @@ header {
   font-style: normal;
   font-weight: 900;
   line-height: 48px; /* 100% */
+  text-align: left;
 }
 .pre-order p {
   color: #7b8bad;
@@ -56,6 +61,7 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
+  text-align: left;
 }
 .row-flex {
   display: flex;
@@ -85,7 +91,7 @@ header {
   margin-right: -50px;
 }
 
-/* <!-- keyboard-images middle content --> */
+/* <! ************* -- keyboard-images middle content -- *********** > */
 .keyboard-images {
   display: flex;
   flex-direction: column;
@@ -112,9 +118,12 @@ header {
   border-radius: 15px;
 }
 #middle-content {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .pre-order h2 {
+  width: 255px; 
   color: #162542;
   text-align: center;
   font-size: 32px;
@@ -132,7 +141,7 @@ header {
   line-height: 26px; /* 162.5% */
 }
 
-/* <!-- Feature section --> */
+/* <! *************** -- Feature section -- *************** > */
 .feature {
   display: flex;
   flex-direction: column;
@@ -145,17 +154,34 @@ header {
   font-style: normal;
   font-weight: 900;
   line-height: 28px; /* 116.667% */
+  margin-top: 80px;
+}
+.feature h3 {
+  /* border: solid; */
+  width: 200px; 
+  color: #162542;
+text-align: center;
+font-size: 24px;
+font-style: normal;
+font-weight: 900;
+line-height: 28px; /* 116.667% */
+text-transform: uppercase; 
 }
 .feature p {
-  color: #7b8bad;
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px; /* 162.5% */
+  width: 327px; 
+ color: #7B8BAD;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; /* 162.5% */ 
 }
 
-div.box {
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -167,11 +193,147 @@ footer {
   align-items: center;
   padding: 30px;
   margin-top: 10px;
-  color: #7B8BAD;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 26px; /* 162.5% */ 
+  color: #7b8bad;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+  margin: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+header {
+  width: 689px; 
+}
+main {
+  max-width: 768px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+.hero {
+  flex-direction: row;
+}
+.hero-img {
+  width: 478px;
+height: 425px;
+flex-shrink: 0; 
+}
+/* <! ************* -- keyboard-images middle content -- *********** > */
+.keyboard-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  height: 320px;
+  gap: 25px;
+  /* width: 100%; */
+  margin-right: 0px;
+}
+.images img:first-child {
+  width: 214px;
+  flex-shrink: 0; 
+  position: relative;
+}
+.images img:last-child {
+  width: 445px;
+flex-shrink: 0; 
+}
+#middle-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 689px; 
+}
+#middle-content h2 {
+  width: 255px; 
+  text-align: left;
+}
+#middle-content p {
+  width: 398px;
+}
+/* <! ***** -- Feature section -- ***** > */
+.feature {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  /* რაც ვეღარ ეტევა, დაალაგებს შესაბამისად */
+}
+}
+
+@media (min-width: 1440px){ 
+header {
+  width: 1110px; 
+}
+main {
+  max-width: 1440px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding-left: 200px;
+  padding-right: 100px;
+}
+.hero {
+  flex-direction: row;
+  gap: 90px;
+}
+.pre-order {
+  width: 445px;
+  height: 480px;
+}
+.hero-img {
+  width: 550px;
+height: 425px;
+flex-shrink: 0; 
+}
+/*** -- keyboard-images middle content -- ***/
+.keyboard-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 90px;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  height: 480px;
+  gap: 25px;
+  margin-right: 0px;
+}
+.images img:first-child {
+  width: 255px;
+  flex-shrink: 0; 
+  position: relative;
+}
+.images img:last-child {
+  width: 445px;
+flex-shrink: 0; 
+}
+#middle-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 689px; 
+}
+#middle-content h2 {
+  width: 255px; 
+  text-align: left;
+}
+#middle-content p {
+  width: 255px;
+  text-align: left;
+}
+/* <! ***** -- Feature section -- ***** > */
+.feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.box {
+  width: 255px;
+  height: 323px;
+}
 
 }
 
