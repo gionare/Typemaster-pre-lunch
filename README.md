@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Github: [Add solution URL here](https://github.com/gionare/Typemaster-pre-lunch)
-- Live Site URL: [Add live site URL here](https://gionare.github.io/Typemaster-pre-lunch/)
+- Github: [Giorgi Nareklishvili gionare ](https://github.com/gionare/Typemaster-pre-lunch)
+- Live Site URL: [Github.io](https://gionare.github.io/Typemaster-pre-lunch/)
 
 ## My process
 
@@ -45,13 +45,12 @@ Users should be able to:
 
 ### What I learned
 
-
-```using child elemens in CSS
+```css
 .images img:first-child {
   opacity: 0.5;
   width: 144px;
   border-radius: 15px;
-}
+} 
 .images img:last-child {
   width: 220px;
   border-radius: 15px;
@@ -84,13 +83,13 @@ React js
 
 ### Useful resources
 
-- [Example resource 1](https://www.google.com) - 
+- [Google](https://www.google.com) - 
 
 ## Author
 
-- Website - [Add your name here](http://portfolio-giorgi-nareklishvili.vercel.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/gionare)
-- LinkedIn - [@yourusername](https://www.linkedin.com/in/gionare/)
+- Website - [Giorgi Nareklishvili](http://portfolio-giorgi-nareklishvili.vercel.app/)
+- Frontend Mentor - [gionare](https://www.frontendmentor.io/profile/gionare)
+- LinkedIn - [Giorgi Nareklishvili](https://www.linkedin.com/in/gionare/)
 
 ## Acknowledgments
 
