@@ -109,8 +109,7 @@ header {
   flex-direction: row;
   height: 226px;
   gap: 10px;
-  /* width: 100%; */
-  margin-right: 50px;
+  width: 100%;
 }
 /* search css before after  pseudo elements, classes */
 
