@@ -1,8 +1,5 @@
 # Frontend Mentor - Typemaster pre-launch landing page solution
 
-![Design preview for the Typemaster pre-launch landing page
- coding challenge](./preview.jpg)
-
 ## Table of contents
 
 - [Frontend Mentor - Typemaster pre-launch landing page solution](#frontend-mentor---typemaster-pre-launch-landing-page-solution)
@@ -29,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<img src="assets/shared/Screenshot from 2023-12-16 11-11-00.png" alt="Screenshot" width="300">
 
 ### Links
 
