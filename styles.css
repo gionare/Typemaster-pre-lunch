@@ -412,18 +412,13 @@ flex-shrink: 0;
 }
 
 /* content for Readme */
-/* using child elemens in CSS */
-/* .images img:first-child {
-  opacity: 0.5;
-  width: 144px;
-  border-radius: 15px;
-}
+
 .images img:last-child {
   width: 220px;
   border-radius: 15px;
-} */
+} 
 
-/* created script.js to make h1 element in uppercase 
+created script.js to make h1 element in uppercase 
 document.addEventListener("DOMContentLoaded", function () {
 
   const h1Element = document.querySelector('h1');
@@ -431,14 +426,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (h1Element) {
     h1Element.textContent = h1Element.textContent.toUpperCase();
   }
-}); */
-
-/* using flext-start feature 
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-} */
+});
 
 /* ask why align-items doesnt work? */
 /* #first {
