@@ -1,12 +1,16 @@
 # Frontend Mentor - Typemaster pre-launch landing page solution
 
+### Screenshot
+
+<img src="assets/shared/Screenshot from 2023-12-16 11-11-00.png" alt="Screenshot" width="500">
+
 ## Table of contents
 
 - [Frontend Mentor - Typemaster pre-launch landing page solution](#frontend-mentor---typemaster-pre-launch-landing-page-solution)
+    - [Screenshot](#screenshot)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
@@ -23,10 +27,6 @@
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
-
-### Screenshot
-
-<img src="assets/shared/Screenshot from 2023-12-16 11-11-00.png" alt="Screenshot" width="300">
 
 ### Links
 
