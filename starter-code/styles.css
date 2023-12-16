@@ -17,20 +17,22 @@ main {
 header {
   /* border: solid; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
   width: 327px; 
-  margin: auto;  /* to be in the center */
+  margin: auto;
+  margin-top: 10px;
 }
 
 .pre-order-now {
   width: 150px;
-  height: 50px;
   border: none;
   flex-shrink: 0;
   border-radius: 8px;
   background: #e8eff2;
+}
+#header {
+  color: #162542; 
 }
 #orange {
   background: #f16718;
@@ -44,7 +46,7 @@ header {
   align-items: center;
   text-align: center;
   padding: 20px;
-  gap: 20px;
+  gap: 40px;
   /* width: 100%; */
 }
 .pre-order h1 {
@@ -90,6 +92,9 @@ header {
   border-radius: 15px;
   margin-right: -50px;
 }
+.grey-square {
+  display: none;
+}
 
 /* <! ************* -- keyboard-images middle content -- *********** > */
 .keyboard-images {
@@ -97,6 +102,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  gap: 20px;
 }
 .images {
   display: flex;
@@ -107,11 +113,15 @@ header {
   margin-right: 50px;
 }
 /* search css before after  pseudo elements, classes */
+
 .images img:first-child {
   /* opacity: 0.5; */
   width: 144px;
   border-radius: 15px;
   position: relative;
+  /* background-color: #F16718;
+  filter: contrast(1.3) sepia(15) saturate(4); */
+  /* filter: drop-shadow(4px 4px 4px rgba(205, 75, 23, 0.204)); */
 }
 .images img:last-child {
   width: 220px;
@@ -204,6 +214,7 @@ footer {
 @media (min-width: 768px) and (max-width: 1439px) {
 header {
   width: 689px; 
+  margin-bottom: 20px;
 }
 main {
   max-width: 768px;
@@ -212,11 +223,24 @@ main {
 }
 .hero {
   flex-direction: row;
+  margin-left: 70px;
+}
+.pre-order p {
+  text-align: left;
+  margin-bottom: 30px;
+}
+#orange {
+  width: 160px;
+  height: 60px;
+
 }
 .hero-img {
   width: 478px;
 height: 425px;
 flex-shrink: 0; 
+}
+.grey-square {
+  display: none;
 }
 /* <! ************* -- keyboard-images middle content -- *********** > */
 .keyboard-images {
@@ -258,13 +282,28 @@ flex-shrink: 0;
 .feature {
   display: flex;
   flex-direction: row;
+
   flex-wrap: wrap;  /* რაც ვეღარ ეტევა, დაალაგებს შესაბამისად */
+  gap: 20px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.box h3 {
+  text-align: left;
+}
+.box p {
+  text-align: left;
 }
 }
 
 @media (min-width: 1440px){ 
 header {
+  /* border: solid; */
   width: 1110px; 
+  margin-bottom: 0px;
 }
 main {
   max-width: 1440px;
@@ -278,13 +317,38 @@ main {
   gap: 90px;
 }
 .pre-order {
-  width: 445px;
-  height: 480px;
+  width: 445px; 
+}
+.row-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 .hero-img {
   width: 550px;
 height: 425px;
 flex-shrink: 0; 
+}
+#first {
+  background-color: #E8EFF2;
+    display: flex;
+    width: 255px;
+    height: 240px;
+    border-radius: 20px;
+    position: absolute;
+    align-items:flex-start;
+    right: -180px;
+    margin-top: 0px; 
+}
+#second {
+  background-color: #E8EFF2;
+    display: flex;
+    width: 255px;
+    height: 240px;
+    border-radius: 20px;
+    position: absolute;
+    align-items: flex-end;
+    left: -70px;
 }
 /*** -- keyboard-images middle content -- ***/
 .keyboard-images {
@@ -326,13 +390,24 @@ flex-shrink: 0;
 }
 /* <! ***** -- Feature section -- ***** > */
 .feature {
-  display: flex;
   flex-direction: row;
   justify-content: left;
+  align-items: flex-start;   /* align containers, top line will be same  */
+  gap: 20px;
 }
+
 .box {
-  width: 255px;
-  height: 323px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.box h3 {
+  width: 255px; 
+  text-align: left;
+}
+.box p {
+  width: 255px; 
+  text-align: left;
 }
 
 }
@@ -358,3 +433,33 @@ document.addEventListener("DOMContentLoaded", function () {
     h1Element.textContent = h1Element.textContent.toUpperCase();
   }
 }); */
+
+/* using flext-start feature 
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+
+/* ask why align-items doesnt work? */
+/* #first {
+  background-color: #E8EFF2;
+    display: flex;
+    width: 255px;
+    height: 240px;
+    border-radius: 20px;
+    position: absolute;
+    align-items:flex-start;
+    right: -180px;
+    margin-top: 0px; 
+}
+#second {
+  background-color: #E8EFF2;
+    display: flex;
+    width: 255px;
+    height: 240px;
+    border-radius: 20px;
+    position: absolute;
+    align-items: flex-end;
+    left: -70px;
+} */
